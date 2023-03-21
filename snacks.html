@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic need -->
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon.png">
+    <title>R&S Cinema</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="profile" href="#">
+
+    <!--Google Font-->
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+    <!-- Mobile specific meta -->
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone-no">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>   -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .input-group {
+            position: relative;
+            display: table;
+            border-collapse: separate;
+        }
+
+        .input-group-btn {
+            position: relative;
+            font-size: 0;
+            white-space: nowrap;
+        }
+
+        .input-group .form-control,
+        .input-group-addon,
+        .input-group-btn {
+            display: table-cell;
+        }
+
+        .btn-danger {
+            color: #fff;
+            background-color: #d9534f;
+            border-color: #d43f3a;
+        }
+
+        .btn-success {
+            color: #fff;
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+        }
+
+        .btns {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+
+        -----icon ------ .glyphicon {
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .bootstrap-select .btn {
+            background-color: #233a50;
+            border-style: solid;
+            border-radius: 4px;
+
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+            color: #abb7c4;
+            font-weight: 200;
+
+            font-size: 16px;
+            /* width:150px; */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .bootstrap-select .dropdown-menu {
+            margin: 15px 0 0;
+        }
+
+        @media screen and (max-width: 1900px) {
+            .bootstrap-select .btn {
+                width: 300px;
+            }
+        }
+
+        @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            .bootstrap-select .btn {
+                width: 200px;
+            }
+        }
+
+        @media screen and (max-device-width: 480px) and (orientation: portrait) {
+            .bootstrap-select .btn {
+                width: 250px;
+            }
+        }
+
+        @media screen and (max-device-width: 640px) {
+
+            .bootstrap-select .btn {
+                width: 200px;
+            }
+        }
+
+        @media screen and (max-device-width: 320px) {
+
+            .bootstrap-select .btn {
+                width: 150px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--preloading-->
+    <div id="preloader">
+        <img class="logo" src="assets/images/Logo-1.png" alt="" width="119" height="58">
+        <div id="status">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--end of preloading-->
+    <!--login form popup-->
+
+    <!--end of login form popup-->
+    <!--signup form popup-->
+
+    <!--end of signup form popup-->
+
+    <!-- BEGIN | Header -->
+    <header class="ht-header full-width-hd">
+        <div class="row">
+            <nav id="mainNav" class="navbar navbar-default navbar-custom">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header logo">
+                    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <a href="index.html"><img class="logo" src="assets/images/Logo-1.png" alt="" width="200"
+                            height="58"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav flex-child-menu menu-left">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="dropdown first ">
+                            <a href="index.html" data-hover="dropdown">
+                                Home
+                            </a>
+
+                        </li>
+                        <li class="dropdown first">
+                            <a href="about.html" data-hover="dropdown">
+                                About US
+                            </a>
+
+
+                        </li>
+                        <!-- <li class="dropdown first">
+							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+								celebrities <i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+							<ul class="dropdown-menu level1">
+								<li><a href="celebritygrid01.html">celebrity grid 01</a></li>
+								<li><a href="celebritygrid02.html">celebrity grid 02 </a></li>
+								<li><a href="celebritylist.html">celebrity list</a></li>
+								<li class="it-last"><a href="celebritysingle.html">celebrity single</a></li>
+							</ul>
+						</li> -->
+                        <li class="dropdown first">
+                            <a href="#" data-toggle="dropdown">
+                                Crown </a>
+                            <i class="fa fa-angle-down" aria-hidden="true" style="color: #fff !important;"></i>
+
+                            <ul class="dropdown-menu level1">
+                                <li><a href="crown.html">Crown Screen</a></li>
+                                <li><a href="crownscreen.html">Crown Screen Movies</a></li>  
+
+                            </ul>
+                        </li>
+                        <!-- <li class="dropdown first">
+							<a class="btn btn-default " data-toggle="dropdown" data-hover="dropdown">
+								Advertise
+							</a>
+
+						</li> -->
+                        <!-- <li class="dropdown first">
+							<a class="btn btn-default " data-toggle="dropdown" data-hover="dropdown">
+								BulkBooking
+							</a>
+
+						</li> -->
+                        <li class="dropdown first">
+                            <a href="advertise.html" data-hover=" dropdown">
+                                Advertise
+                            </a>
+
+                        </li>
+                        <li class="dropdown first">
+                            <a href="groupbooking.html" data-hover="dropdown">
+                                Group booking
+                            </a>
+
+                        </li>
+                        <!-- <li class="dropdown first">
+                            <a href="contact.html" data-hover="dropdown">
+                                Contact US
+                            </a>
+
+                        </li> -->
+                    </ul>
+                    <ul class="nav navbar-nav flex-child-menu menu-right">
+
+
+                        <!-- <li style="background-color: #f5b50a; border-radius: 25px; margin:10px "><a href="snacks.html"
+                                style="color:black; ">Order Snacks</a></li>
+                        <li style="background-color: #f5b50a; border-radius: 25px; margin:10px "><a
+                                href="movie_sch.html" style="color:black; ">Movie Schadule</a></li> -->
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+            <!-- search form -->
+        </div>
+
+    </header>
+    <!-- END | Header -->
+
+    <div class="slider sliderv2"
+        style="background-image: url('assets/images/crown/empty1.jpg'); background-size:cover;">
+        <div class="container">
+            <div class="row row1" >
+                <div class="col-lg-12 col-md-9 col-sm-12 col-xs-12">
+                    <h1 style="color: white; font-size: 50px;"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-items">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="row md-row">
+                    <div class="col-lg-12">
+                        <h4 style="color: white; margin-bottom: 15px; text-align: center;">Order Snacks</h4>
+                        <div class="form-style-1 user-pro" action="">
+                            <form class="contact-form" method="post" id="contactForm" action="modal.php">
+
+                                <div class="row">
+                                    <div class="col-md-12 form-it">
+                                        <label>Name</label>
+                                        <input placeholder="Your name" type="text" id="name" name="name" size="40"
+                                            aria-required="true" pattern="[a-zA-z]{1,15}" aria-invalid="false" />
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 form-it">
+                                        <label>Contact No.</label>
+                                        <input placeholder="Your Contact No." type="number" name="phone" id="phone"
+                                            size="40" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-%+-]+\.[a-z]{2,4}$"
+                                            aria-required="true" aria-invalid="false">
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-5 form-it">
+                                        <label>Email Address</label>
+                                        <input placeholder="Your Email Address" type="email" name="email" id="email"
+                                        >
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 form-it">
+                                        <label>Screen</label>
+                                        <input placeholder="Screen No." type="number" id="screen" name="screen">
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-5 form-it">
+                                        <label>Seat No.</label>
+                                        <input placeholder="Seat No." type="number" id="seatno" name="seatno"
+                                            aria-required="true" aria-invalid="false">
+                                    </div>
+
+                                </div>
+                                
+                                <div class="row">
+
+                                    <div class="col-md-12 form-it" style="text-align: center;">
+                                        <br>
+                                        <button class="button1" type="submit"> Save </button>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                            <style>
+                                .button1 {
+                                    background-color: #f5b50a;
+                                    border: none;
+                                    padding: 25px;
+                                    text-align: center;
+                                    align-items: center;
+                                    text-decoration: none;
+                                    display: inline-block;
+                                    font-size: 20px;
+                                    margin: 10px 2px;
+                                    cursor: pointer;
+                                    border-radius: 35px;
+                                    margin-bottom: 0px;
+                                }
+
+                                
+                            </style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <div _ngcontent-xfj-c1="" class="fl-fl float-tw"><i _ngcontent-xfj-c1="" class="fa fa-shopping-cart"></i>
+		<a _ngcontent-xfj-c1="" href="https://wa.me/9727956000">Order Snacks</a>
+		<!-- <a _ngcontent-xfj-c1="" href="#" target="_blank" data-toggle="modal"
+			data-target="#exampleModalCenter">Order Snacks!</a> -->
+		</div>
+	<div _ngcontent-xfj-c1="" class="fl-fl float-ig"><i _ngcontent-xfj-c1="" class="fa fa-film"></i><a
+			_ngcontent-xfj-c1="" href="movie_sch.html">Movie Schedule</a></div>
+    <!-- footer v2 section-->
+    <footer class="ht-footer full-width-ft" style="background-image: url('assets/images/bg2.jpg');">
+        <div class="row">
+            <div class="flex-parent-ft">
+                <div class="flex-child-ft item1">
+                    <a href="index.html"><img class="logo" src="assets/images/Logo-1.png" alt="" width="119"
+                            style="margin-bottom: 30px;"></a>
+                    <p>Rajshivalay Road,<br>
+                        Anand, Gujarat 388001</p>
+                    <p>Call us: <a href="tel:+91 02692 - 247047 "></a>+91 02692 - 247047 / 247147 </p>
+                    <p>
+                        Mail on: <a href="mailto:info@rnscinemas.com"></a>info@rnscinemas.com
+                    </p>
+                </div>
+                <div class="flex-child-ft item2">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="advertise.html">Advertise</a></li>
+                        <li><a href="crown.html">Crown</a></li>
+
+                    </ul>
+                </div>
+                <div class="flex-child-ft item3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="movie_sch.html">Movie Schedule</a></li>
+                        <li><a href="groupbooking.html">Group Booking</a></li>
+                        <li><a href="snacks.html">Order Snacks</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex-child-ft item5">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
+                    <form action="#">
+                        <input type="text" placeholder="Enter your email">
+                    </form>
+                    <a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
+                </div>
+            </div>
+            <div class="ft-copyright">
+                <div class="ft-left">
+                    <p>© 2021 R&S Cinema. All Rights Reserved. Designed by <a href="http://keryar.com/"
+                            style="color: #f0c300;"> Keryar.</a></p>
+                </div>
+                <div class="backtotop">
+                    <p><a href="#" id="back-to-top">Back to top <i class="ion-ios-arrow-thin-up"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer v2 section-->
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/plugins2.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            var quantitiy = 0;
+            $('.quantity-right-plus').click(function (e) {
+
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                var quantity = parseInt($('#quantity').val());
+
+                // If is not undefined
+
+                $('#quantity').val(quantity + 1);
+
+
+                // Increment
+
+            });
+
+            $('.quantity-left-minus').click(function (e) {
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                var quantity = parseInt($('#quantity').val());
+
+                // If is not undefined
+
+                // Increment
+                if (quantity > 0) {
+                    $('#quantity').val(quantity - 1);
+                }
+            });
+
+        });
+
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
+</body>
+
+</html>
