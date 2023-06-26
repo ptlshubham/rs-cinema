@@ -21,7 +21,7 @@
     ".\n Quantity : ".$quant;
 
     mail($mailTo,"New inquiry from: $name", $txt, $headers);
-   //header("location:index.html");
+   //header("location:https://rnscinemas.com/");
    
    //$htmlContent = file_get_contents("mail.html");
    
@@ -37,5 +37,5 @@
 
 
 <script language="javascript">
-    window.open("index.html","_self");
+    window.open("https://rnscinemas.com/","_self");
 </script>
